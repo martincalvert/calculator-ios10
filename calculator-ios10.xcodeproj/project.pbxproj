@@ -14,6 +14,7 @@
 		B7762CAC1E4E9BC8002237DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7762CAA1E4E9BC8002237DD /* LaunchScreen.storyboard */; };
 		B7762CB71E4E9BC8002237DD /* calculator_ios10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7762CB61E4E9BC8002237DD /* calculator_ios10Tests.swift */; };
 		B7762CC21E4E9BC8002237DD /* calculator_ios10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7762CC11E4E9BC8002237DD /* calculator_ios10UITests.swift */; };
+		B7762CD11E4EAD55002237DD /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7762CD01E4EAD55002237DD /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B7762CBD1E4E9BC8002237DD /* calculator-ios10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calculator-ios10UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7762CC11E4E9BC8002237DD /* calculator_ios10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculator_ios10UITests.swift; sourceTree = "<group>"; };
 		B7762CC31E4E9BC8002237DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7762CD01E4EAD55002237DD /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		B7762CA01E4E9BC8002237DD /* calculator-ios10 */ = {
 			isa = PBXGroup;
 			children = (
-				B7762CA11E4E9BC8002237DD /* AppDelegate.swift */,
+				B7762CCF1E4E9CDA002237DD /* Supporting Files */,
 				B7762CA31E4E9BC8002237DD /* ViewController.swift */,
 				B7762CA51E4E9BC8002237DD /* Main.storyboard */,
-				B7762CA81E4E9BC8002237DD /* Assets.xcassets */,
-				B7762CAA1E4E9BC8002237DD /* LaunchScreen.storyboard */,
-				B7762CAD1E4E9BC8002237DD /* Info.plist */,
+				B7762CD01E4EAD55002237DD /* CalculatorBrain.swift */,
 			);
 			path = "calculator-ios10";
 			sourceTree = "<group>";
@@ -123,6 +123,17 @@
 				B7762CC31E4E9BC8002237DD /* Info.plist */,
 			);
 			path = "calculator-ios10UITests";
+			sourceTree = "<group>";
+		};
+		B7762CCF1E4E9CDA002237DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7762CAD1E4E9BC8002237DD /* Info.plist */,
+				B7762CA11E4E9BC8002237DD /* AppDelegate.swift */,
+				B7762CAA1E4E9BC8002237DD /* LaunchScreen.storyboard */,
+				B7762CA81E4E9BC8002237DD /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7762CD11E4EAD55002237DD /* CalculatorBrain.swift in Sources */,
 				B7762CA41E4E9BC8002237DD /* ViewController.swift in Sources */,
 				B7762CA21E4E9BC8002237DD /* AppDelegate.swift in Sources */,
 			);
