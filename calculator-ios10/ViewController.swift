@@ -11,22 +11,39 @@ import UIKit
 class ViewController: UIViewController {
     var userInTheMiddleOfTyping = false
     @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var brainDescription: UILabel!
     var brain = CalculatorBrain()
     var displayValue: Double {
         set {
             display.text = String(newValue)
+            brainDescription.text = brain.description
         }
         get {
             return Double(display.text!)!
         }
     }
+    @IBAction func clear(_ sender: Any) {
+        brain = CalculatorBrain()
+        displayValue = 0
+        userInTheMiddleOfTyping = false
+    }
     
     @IBAction func touchDigit(_ sender: UIButton) {
         let digit = sender.currentTitle!
         if userInTheMiddleOfTyping {
+            if digit == "." {
+                if display.text!.contains(".") {
+                    return
+                }
+            }
             display.text = display.text! + digit
         } else {
-            display.text = digit
+            if digit == "." {
+                display.text = "0."
+            } else {
+                display.text = digit
+            }
+            
             userInTheMiddleOfTyping = true
         }
     }
@@ -42,6 +59,7 @@ class ViewController: UIViewController {
         if let result = brain.result {
             displayValue = result
         }
+        brainDescription.text = brain.description
     }
 }
 
